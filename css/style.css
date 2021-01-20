@@ -7,6 +7,9 @@
 }
 body{
   background-color: #fdd816;
+  animation: windows 15s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 h1{
   text-align: center;
@@ -40,5 +43,13 @@ img {
 @keyframes move{
   from{transform: translateX(-250px);}
   to{ transform: translateX(200px);}
+
+}
+@keyframes windows{
+  25%{background-color:rgb(130, 138, 24); color: darkslategray;}
+  25%{background-color:rgb(18, 146, 7); color: thistle;}
+  25%{background-color:rgb(49, 74, 143); color: seashell;}
+  25%{background-color:rgb(151, 59, 59); color: silver;}
+
 }
 
